@@ -1,0 +1,15 @@
+body {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-family: 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  background: #222228;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+}
