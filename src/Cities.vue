@@ -26,7 +26,7 @@ import { defineComponent, PropType } from 'vue';
 import { City } from './models/City.model';
 
 /* tslint:disable-next-line */
-import * as chroma from 'chroma-js';
+import chroma from 'chroma-js';
 
 const scale = chroma.scale(['green', 'red']);
 
