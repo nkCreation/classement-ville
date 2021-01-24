@@ -9,4 +9,7 @@ export default defineConfig({
       targets: ['defaults', 'not IE 11'],
     }),
   ],
+  optimizeDeps: {
+    include: ['chroma-js'],
+  },
 });

@@ -26,7 +26,7 @@
 import { defineComponent } from 'vue';
 import Cities from './Cities.vue';
 import { City } from './models/City.model';
-import { cities } from './assets/data';
+import { cities, citiesWithTravelTime } from './assets/data';
 
 export default defineComponent({
   name: 'App',
@@ -36,6 +36,7 @@ export default defineComponent({
   data: () => ({
     sortingAlgorithm: 'classic',
     cities,
+    citiesWithTravelTime,
     sorting: [
       { name: 'Équidistance', value: 'classic' },
       { name: 'OF', value: 'OF' },
@@ -56,7 +57,7 @@ export default defineComponent({
       }
     },
     sortedCitiesByDiff(): City[] {
-      return [...this.cities].sort((a, b) => {
+      return [...this.citiesWithTravelTime].sort((a, b) => {
         const diffA = a.OF - a.janze;
         const diffB = b.OF - b.janze;
         return Math.abs(diffA) - Math.abs(diffB);
@@ -65,7 +66,7 @@ export default defineComponent({
   },
   methods: {
     sortedByKey(key: keyof City): City[] {
-      return [...this.cities].sort((a, b) => {
+      return [...this.citiesWithTravelTime].sort((a, b) => {
         /* tslint:disable-next-line */
         return parseInt(a[key], 10) - parseInt(b[key], 10);
       });
@@ -76,7 +77,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div {
-  max-width: 600px;
+  width: 94%;
+  max-width: 940px;
   margin: 0 auto;
 }
 label {
