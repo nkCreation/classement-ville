@@ -63,7 +63,7 @@ export default defineComponent({
         return (
           Math.abs(diffA) -
           Math.abs(diffB) -
-          (b.OF - a.OF) -
+          (b.OF - a.OF) +
           (b.janze - a.janze)
         );
       });
