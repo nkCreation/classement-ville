@@ -60,7 +60,12 @@ export default defineComponent({
       return [...this.citiesWithTravelTime].sort((a, b) => {
         const diffA = a.OF - a.janze;
         const diffB = b.OF - b.janze;
-        return Math.abs(diffA) - Math.abs(diffB);
+        return (
+          Math.abs(diffA) -
+          Math.abs(diffB) -
+          (b.OF - a.OF) -
+          (b.janze - a.janze)
+        );
       });
     },
   },
