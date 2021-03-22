@@ -38,7 +38,7 @@ export default defineComponent({
     cities,
     citiesWithTravelTime,
     sorting: [
-      { name: 'Équidistance', value: 'classic' },
+      { name: 'Classique', value: 'classic' },
       { name: 'OF', value: 'OF' },
       { name: 'Janzé', value: 'janze' },
     ],
