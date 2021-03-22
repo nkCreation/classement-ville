@@ -13,14 +13,14 @@ export const cities = [
     OF: 13,
     ZNK: 17,
   },
-  { name: 'Corps-Nuds', janze: 9, OF: 17, ZNK: 22 },
-  { name: 'Chanteloup', janze: 13, OF: 22, ZNK: 27 },
-  {
-    name: 'Saint-Aubin-du-Pavail',
-    janze: 13,
-    OF: 21,
-    ZNK: 28,
-  },
+  //{ name: 'Corps-Nuds', janze: 9, OF: 17, ZNK: 22 },
+  //{ name: 'Chanteloup', janze: 13, OF: 22, ZNK: 27 },
+  //{
+  //  name: 'Saint-Aubin-du-Pavail',
+  //  janze: 13,
+  //  OF: 21,
+  //  ZNK: 28,
+  //},
 ];
 
 export const citiesWithTravelTime = [
@@ -38,12 +38,12 @@ export const citiesWithTravelTime = [
     OF: 16,
     ZNK: 20,
   },
-  { name: 'Corps-Nuds', janze: 10, OF: 22, ZNK: 31 },
-  { name: 'Chanteloup', janze: 14, OF: 24, ZNK: 34 },
-  {
-    name: 'Saint-Aubin-du-Pavail',
-    janze: 14,
-    OF: 22,
-    ZNK: 34,
-  },
+  //{ name: 'Corps-Nuds', janze: 10, OF: 22, ZNK: 31 },
+  //{ name: 'Chanteloup', janze: 14, OF: 24, ZNK: 34 },
+  //{
+  //  name: 'Saint-Aubin-du-Pavail',
+  //  janze: 14,
+  //  OF: 22,
+  //  ZNK: 34,
+  //},
 ];
